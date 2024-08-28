@@ -10,7 +10,6 @@ typedef struct date {
 	// are sufficient (4 bit unsigned int = 0 - 15)
 	
 	//this forces the compiler to store the m in a separate 4 block of memory
-	// kinda undoes what we just did on memory saving but is good to know:
 	unsigned int : 0;
 	unsigned int m : 4; 
 	/*This is the largest data size, 4 bytes, so the memory set aside will be in  
