@@ -8,10 +8,10 @@ int main()
 	int **arr;
 	int count = 0,i,j;
 	/*This line allocates the memory for the pointers hint: sizeof(int*)* R*/
-	arr = (int **)malloc(sizeof(int *) * R); // 8 * 3 = 24
+	arr = (int **)malloc(sizeof(int *) * R);
 	/*This line of code allocates space for all of the data.  Subscript 0 will
 	 *point to this block of memory.*/
-	arr[0] = (int *)malloc(sizeof(int) * C * R); // 4 * 4 * 3 = 48
+	arr[0] = (int *)malloc(sizeof(int) * C * R);
 
 	/*This for loop points the remaining pointers to the appropriate place in 
 	 *memory. */
@@ -35,8 +35,6 @@ int main()
 		printf("\n");
 	}
 
-	// 2 Malloc calls, 2 free calls
-	// In reverse order of initalization to not leave dangling pointers/memory
 	free(arr[0]);
 	free(arr);
 
