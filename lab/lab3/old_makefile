@@ -1,0 +1,12 @@
+MESSAGE=HELLO WORLD!
+
+all: build tar list
+	@echo "All Done"
+build:
+	@echo "${MESSAGE}"
+tar: 
+	tar -czf test.tar.gz src/
+untar:
+	tar -xzf test.tar.gz
+list:
+	tar -ztvf test.tar.gz
