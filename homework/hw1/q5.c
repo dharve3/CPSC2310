@@ -12,7 +12,7 @@
 
 // Answer the following questions:
 // What is the largest data type in this struct? Your answer should be a number only. _4_
-// How many bytes of memory will be needed for this struct? Your answer should be a number only. _16_
+// How many bytes of memory will be needed for this struct? Your answer should be a number only. _20_
 // How many bytes of padding will be needed for this struct? Your answer should be a number only. _5_
 
 #include <stdio.h>
