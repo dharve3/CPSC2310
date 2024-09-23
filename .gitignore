@@ -15,7 +15,10 @@
 # any.swp
 *.swp
 
-# out/executable files
+# out/executable files/intermediates
+*.i
+*.s
+*.o
 *.out
 *.exe
 
