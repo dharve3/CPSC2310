@@ -11,7 +11,7 @@ int main(int argc, char** argv)
         exit(-1);
     }
 
-    FILE* fp = fopen(argv[1], "w");
+    FILE* fp = fopen(argv[1], "r");
     if(fp==NULL)
     {
         printf("fp did not open\n"); 
