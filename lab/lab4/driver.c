@@ -1,12 +1,11 @@
-#include <stdio.h> 
-#include <stdlib.h>
+#include "functions.h"
 
 
 int main(int argc, char** argv)
 {
     printf("cheking command line arguments\n");
 
-    if (argc < 3)
+    if (argc < 2)
     { 
         printf("not enought argument: ./exe filename\n"); 
         exit(-1);

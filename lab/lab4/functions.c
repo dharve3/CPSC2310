@@ -1,6 +1,8 @@
+#include "functions.h"
+
 int** readFile(FILE* fp, int *size)
 {
-    fscanf(fp, "%d", &size);
+    fscanf(fp, "%p", &size);
     int num = *size;
     int index = 0;
     
@@ -14,7 +16,7 @@ int** readFile(FILE* fp, int *size)
     {
         for(; col < num; col++)
         {
-            fscanf(fp, "%d", mat[row][col]);
+            fscanf(fp, "%d", &mat[row][col]);
         }
     }
     return mat;
