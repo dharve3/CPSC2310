@@ -6,7 +6,7 @@ int** readFile(FILE* fp, int *size)
     int num = *size;
     int index = 0;
     
-    int** mat = (int**)malloc(num * sizeof(int));
+    int** mat = (int**)malloc(num * sizeof(int*)); // sizeof int ptr rather than size
     for(index = 0; index < num; index++)
         mat[index] = (int*)malloc(num * sizeof(int)); 
 
