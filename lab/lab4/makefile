@@ -7,8 +7,8 @@ all: $(PROGRAM)
 run: $(PROGRAM)
 	./$(PROGRAM)
 
-$(PROGRAM): fileHere.cpp otherFileHere.cpp
-	$(COMPILER) $(OPTIONS) fileHere.cpp otherFileHere.cpp -o $(PROGRAM)
+$(PROGRAM): driver.c functions.c
+	$(COMPILER) $(OPTIONS) driver.c functions.c -o $(PROGRAM)
 
 clean:
 	rm *.out
