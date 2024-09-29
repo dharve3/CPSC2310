@@ -1,3 +1,10 @@
+/*
+ * Dylan Harvey
+ * CPSC2310 Fall 2024
+ * UserName: dharve3
+ * Instructor: Dr. Yvon Feaster
+ */
+
 #include "functions.h"
 
 
