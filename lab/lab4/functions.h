@@ -3,6 +3,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
 
 int** readFile(FILE* fp, int *size);
 void printMatrix (int** mat, int num);
