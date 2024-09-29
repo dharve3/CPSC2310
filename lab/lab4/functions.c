@@ -10,11 +10,9 @@ int** readFile(FILE* fp, int *size)
     for(index = 0; index < num; index++)
         mat[index] = (int*)malloc(num * sizeof(int)); 
 
-    int row = 0; 
-    int col = 0;
-    for(; row < num; row++)
+    for(int row = 0; row < num; row++) // define row within for loop
     {
-        for(; col < num; col++)
+        for(int col = 0; col < num; col++) // define col within for loop
         {
             fscanf(fp, "%d", &mat[row][col]);
         }
