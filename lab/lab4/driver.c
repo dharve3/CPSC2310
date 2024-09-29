@@ -21,5 +21,9 @@ int main(int argc, char** argv)
     int **mat = readFile(fp, &size);
     printMatrix(mat, size);
 
+    // Addition to test new functions
+    int total = calculateVal(mat, size);
+    printf("Total = %d\n", total);
+
     return 0;
 }

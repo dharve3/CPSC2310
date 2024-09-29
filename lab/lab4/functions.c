@@ -37,3 +37,25 @@ void printMatrix (int** mat, int num)
     }
     
 }
+
+int calculateVal(int ** mat, int size) {
+    int total = 0;
+
+    for (int r = 0; r < size; r++) {
+        for (int c = 0; c < size; c++) {
+            if(!isLeftDiagonal(r, c) && !isRightDiagonal(size, r, c)) {
+                total += mat[r][c];
+            }
+        }
+    }
+
+    return total;
+}
+
+bool isRightDiagonal(int size, int row, int col) {
+    return (row + col) == (size - 1);
+}
+
+bool isLeftDiagonal(int row, int col) {
+    return row == col;
+}
