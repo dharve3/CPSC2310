@@ -3,7 +3,7 @@
 
 int main(int argc, char** argv)
 {
-    printf("cheking command line arguments\n");
+    // printf("cheking command line arguments\n");
 
     if (argc < 2)
     { 
