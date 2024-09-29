@@ -2,7 +2,7 @@
 
 int** readFile(FILE* fp, int *size)
 {
-    fscanf(fp, "%p", &size);
+    fscanf(fp, "%d", size); // size is ptr, why take address?
     int num = *size;
     int index = 0;
     
